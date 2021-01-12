@@ -61,8 +61,6 @@ public class SwitchStatement {
 
     public static boolean IsLeapYear (int year){
         boolean leapYear = false;
-        System.out.println(year%4);
-        System.out.println(year%100);
 
         if (year >= 1 && year <= 9999 && year % 4 == 0){
             leapYear = true;
