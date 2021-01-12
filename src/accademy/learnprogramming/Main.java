@@ -26,6 +26,23 @@ public class Main {
         System.out.println("Sum = " + ForLoops.SumOdd(13,13));
         System.out.println("Sum = " + ForLoops.SumOdd(100,-100));
 
+        int number = 4;
+        int finishNumber = 20;
+        int count = 0;
+        while (number <= finishNumber){
+            number++;
+            if (count == 5){
+                System.out.println(count + " Even numbers have been found");
+                break;
+            } else if (!WhileLoop.IsEvenNumber(number)){
+                continue;
+            }
+            count++;
+            System.out.println("Even number " + number);
+
+        }
+
+        System.out.println("Sum of digits is " + WhileLoop.SumDigits(125));
 
     }
 }
