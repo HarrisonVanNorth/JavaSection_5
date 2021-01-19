@@ -43,6 +43,20 @@ public class Main {
         }
 
         System.out.println("Sum of digits is " + WhileLoop.SumDigits(125));
+        System.out.println("Palindrome = " + WhileLoop.IsPalindrome(1221));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(212));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(217));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(0));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(5));
+        System.out.println(ForLoops.GetEvenDigitSum(123456789));
+        System.out.println(ForLoops.HasSharedDigit(12,23));
+        System.out.println(ForLoops.HasSharedDigit(33,44));
+        System.out.println(ForLoops.HasSameLastDigit(23,13));
+        System.out.println(ForLoops.GetGreatestCommonDivisor(12,30));
+        System.out.println(ForLoops.GetGreatestCommonDivisor(25,15));
+        ForLoops.PrintFactors(6);
+
+
 
     }
 }
