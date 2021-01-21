@@ -22,4 +22,35 @@ public class WhileLoop {
         }
         return sum;
     }
+
+    public static boolean IsPalindrome (int number){
+        int reversed = 0;
+        int num = number;
+
+        while (num != 0){
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /=10;
+        }
+        return (number == reversed);
+    }
+
+    public static int sumFirstAndLastDigit (int number) {
+        int total = 0;
+        if(number != 0 && number > 9) {
+
+            while (number != 0) {
+                int digit = number % 10;
+                total += digit;
+                number /= 10;
+                total -= 1;
+            }
+            total += 2;
+        } else {
+            total = number + number;
+        }
+        return total;
+    }
+
+
 }

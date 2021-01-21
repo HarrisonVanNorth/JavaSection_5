@@ -1,5 +1,9 @@
 package accademy.learnprogramming;
 
+import javax.sound.midi.Soundbank;
+import java.util.Map;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -43,6 +47,57 @@ public class Main {
         }
 
         System.out.println("Sum of digits is " + WhileLoop.SumDigits(125));
+        System.out.println("Palindrome = " + WhileLoop.IsPalindrome(1221));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(212));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(217));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(0));
+        System.out.println(WhileLoop.sumFirstAndLastDigit(5));
+        System.out.println(ForLoops.GetEvenDigitSum(123456789));
+        System.out.println(ForLoops.HasSharedDigit(12,23));
+        System.out.println(ForLoops.HasSharedDigit(33,44));
+        System.out.println(ForLoops.HasSameLastDigit(23,13));
+        System.out.println(ForLoops.GetGreatestCommonDivisor(12,30));
+        System.out.println(ForLoops.GetGreatestCommonDivisor(25,15));
+
+        // PARS STRING TO INT
+        String numberAsString = "2018";
+        System.out.println("numberAsString= " + numberAsString);
+        int myNum = Integer.parseInt(numberAsString);
+        System.out.println("myNum = " + myNum);
+        numberAsString += 1;
+        myNum += 1;
+        System.out.println("numberAsString= "+ numberAsString);
+        System.out.println("myNum = " + myNum);
+
+        //SCANNER CLASS
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter your year of birth: ");
+//        int yearOfBirth = scanner.nextInt();
+//        scanner.nextLine();
+//        System.out.println("Enter your name: ");
+//        String name = scanner.nextLine();
+//        int age = 2021 - yearOfBirth;
+//        System.out.println("Your name is " + name + " and you are " + age + " years old");
+//
+//        scanner.close();
+
+        // Scanner Challenge
+//        Scanner scanner1 = new Scanner(System.in);
+//        int counter = 1;
+//        int total = 0;
+//        while (counter < 11){
+//            System.out.println("Enter number#" + counter);
+//            counter++;
+//            total += scanner1.nextInt();
+//            scanner1.nextLine();
+//        }
+//        System.out.println("Total = " + total);
+//        scanner1.close();
+
+
+
+
 
     }
 }
